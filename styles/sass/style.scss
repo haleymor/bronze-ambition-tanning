@@ -46,13 +46,12 @@ h2 {
 
 header {
   position: fixed;
-  background: #FCFAFA;
+  background:rgba( 255, 255, 255, 0.8 );
   width: 100%;
 }
 
-header nav .logo {
-  width: 25%;
-  padding: 15px 20px 0px;
+header .logo {
+width: 10%;
 }
 
 header nav {
@@ -64,11 +63,12 @@ header nav {
     padding: 0;
     justify-content: flex-end;
     li {
-      padding: 0 20px;
+      padding: 20px 40px 0;
       a {
         text-decoration: none;
         text-transform: uppercase;
         color: #EAA195;
+        font-size: 20px;
       }
     }
   }
@@ -76,7 +76,7 @@ header nav {
 
 // home styles
 .home {
-  background-image: url("../assets/images/background-home.jpg");
+  background-image: url("../assets/images/image1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,11 +108,10 @@ header nav {
   right: 0;
   bottom: -500px;
   left: 0;
-  border-right: 4px solid white;
-  border-bottom: 4px solid white;
+  border-right: 4px solid #3333;
+  border-bottom: 4px solid #3333;
   transform: rotate(45deg);
   animation: 3s arrow infinite ease;
-
 }
 
 // specials and services styling 
