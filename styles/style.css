@@ -424,6 +424,10 @@ footer {
           justify-content: space-evenly;
 }
 
+.social-icons a {
+  color: black;
+}
+
 .sign-up-footer form {
   display: -webkit-box;
   display: -ms-flexbox;
