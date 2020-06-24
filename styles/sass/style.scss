@@ -203,6 +203,45 @@ header nav {
   padding: 60px; 
 }
 
+// services styles
+
+.tanning {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.tanning-bed {
+  padding: 40px;
+  width: 33%;
+}
+
+.service-page .tanning-bed h3 {
+  color: #4DC3AB;
+}
+
+.service-page h2 {
+  padding-top: 150px;
+  color: black;
+}
+
+.service-page h3 {
+  color: black;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.tanning-bed-content h5, .tanning-bed-content p {
+  color: black;
+  text-align: center;
+}
+
+.tanning-bed-content {
+  background: #D2CBCB;
+  padding: 5px 25px;
+}
+
 // footer styles 
 
 footer {
