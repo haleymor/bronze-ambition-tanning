@@ -172,6 +172,26 @@ header nav {
   margin-right: 30px;
 }
 
+// main intro styling 
+.main-intro {
+  background-color: #C19AA0;
+  padding: 20px 100px 10px;
+  margin: 50px 200px 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.main-intro p {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  line-height: 1.5;
+  span {
+    font-size: 30px;
+  }
+}
+
 // benefits of tanning
 .benefits-of-tanning p {
   text-align: center;
@@ -207,6 +227,10 @@ header nav {
   background-color: #ECECEC;
 }
 
+.service-page {
+  padding-top: 40px;
+}
+
 
 .services h2, .specials h2 {
   text-align: center;
@@ -233,14 +257,14 @@ header nav {
   padding: 40px;
 }
 
-.services-content button, .specials-content button {
+.services-content button, .specials-content button, .sign-up-footer button {
   padding: 10px 30px;
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
 }
 
-.services-content button a, .specials-content button a {
+.services-content button a, .specials-content button a, .sign-up-footer button a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -376,16 +400,21 @@ header nav {
 }
 
 .review{
-  width:300px;
-  height:400px;
-  margin: 50px;
+  width:400px;
+  height:450px;
+  margin: 40px;
   text-align: center;
 }
 
 .review-text {
   color: #333232;
-  padding: 20px;
+  padding: 10px;
   line-height: 1.5;
+  text-align: justify;
+}
+
+.review .rating {
+  color: #F3aa3d;
 }
 
 .uv-free-tanning {
@@ -404,7 +433,7 @@ header nav {
 }
 
 .uv-free-tanning .header-image {
-  background-image: url('../assets/images/shifaaz-shamoon-sLAk1guBG90-unsplash.jpg');
+  background-image: url('../assets/images/shifaaz-shamoon-sLAk1guBG90-unsplash-min.jpeg');
   height: 50vh;
   background-size: cover;
   h2 {
@@ -412,35 +441,62 @@ header nav {
   }
 }
 
+.uv-free-tanning button {
+  padding: 10px 30px;
+  background-color: #333232;
+  border: 2px solid #333232;
+  border-radius: 10px;
+}
+
+.uv-free-tanning button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
 .mystic-intro {
   padding: 40px 320px 10px;
   line-height: 1.5;
 }
 
-.mystic-details {
+.mystic-details, .further-details {
   display: flex;
   justify-content: center;
 }
 
-.mystic-shades, .mystic-scents {
+.mystic-shades, .mystic-scents, .accelerator, .home-care {
   padding: 10px 10px;
   margin: 70px 50px;
   background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
   line-height: 1.5;
   width: 55%;
-  height: 200px;
+  height: 250px;
 }
-
 
 .mystic-shades ul li, .mystic-scents ul li {
   text-align: left;
   padding-left: 70px;
 }
 
+.accelerator p, .home-care p {
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.home-care p {
+  padding-top: 70px;
+}
+
 .mystic-image {
+  border-radius: 5px;
   width: 50%;
   padding: 10px 10px;
   margin: 10px 40px;
+  img {
+    border-radius: 5px;
+  }
 }
 
 .leg-tanner {
@@ -476,13 +532,26 @@ header nav {
 }
 
 .tanning-beds-intro .header-image {
-  background-image: url(../assets/images/beach-rocks.jpeg);
+  background-image: url(../assets/images/beach-rocks-min.jpeg);
   height: 50vh;
   background-size: cover;
   background-position: 70% 40%;
   h2 {
     color: white;
   }
+}
+
+.tanning-beds-intro button {
+  padding: 10px 30px;
+  background-color: #333232;
+  border: 2px solid #333232;
+  border-radius: 10px;
+}
+
+.tanning-beds-intro button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
 }
 
 .tanning-beds-intro-text {
@@ -495,6 +564,276 @@ header nav {
 .tanning-bed-list {
   padding-left: 500px;
   line-height: 2.5;
+}
+
+// reviews
+.reviews h2 {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.reviews .header-image {
+  background-image: url('../assets/images/shifaaz-shamoon-sLAk1guBG90-unsplash-min.jpeg');
+  height: 50vh;
+  background-size: cover;
+  h2 {
+    color: white;
+  }
+}
+
+//promotions
+.promotions h2 {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.promotions .header-image {
+  background-image: url(../assets/images/beach-rocks-min.jpeg);
+  height: 50vh;
+  background-size: cover;
+  background-position: 70% 40%;
+  h2 {
+    color: white;
+  }
+}
+
+.promotions button {
+  padding: 10px 30px;
+  margin: 20px 600px;
+  background-color: #333232;
+  border: 2px solid #333232;
+  border-radius: 10px;
+}
+
+.promotions button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.regular-promotions {
+  display: flex;
+  justify-content: center;
+}
+
+
+.promotion{
+  position: relative;
+  width:400px;
+  height:400px;
+  border:2px solid white;
+  margin: 20px;
+}
+
+.promotion:hover .image-overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.promotion:hover .title {
+  visibility: hidden;
+}
+
+.overlay-text {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.promotion:hover .overlay-text {
+  transform: translateY(0);
+}
+
+.overlay-text {
+  padding: 0 20px;
+  text-align: center;
+  line-height: 1.5;
+  .small-text {
+    line-height: 1;
+  }
+}
+
+.image-overlay{
+  display:table;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+  width:100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .2s, visibility .2s;
+}
+
+.promotion h2 { 
+  // margin: 0 auto;
+  // font-size: 2.5em;
+  text-align: center;
+}
+
+.promo1 {
+  background-image: url('../assets/images/F4970B61-E20F-4549-9ED8-65FDC7FE59A3.png');
+  background-size: cover;
+  background-position: 10% 60%;
+}
+
+.promo2 {
+  background-image: url('../assets/images/E12C29F6-2A6D-4E2A-A2A5-F0D1F17D358B.png');
+  background-size: cover;
+  background-position: 10% 60%;
+}
+
+.promo3 {
+  background-image: url('../assets/images/pinkpapaya_010.jpeg');
+  background-size: cover;
+  background-position: 10% 60%;
+}
+
+.price-matching {
+  background-color: #C19AA0;
+  padding: 20px 100px 10px;
+  margin: 50px 200px 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.price-matching h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.price-matching p {
+  color: black;
+  text-align: center;
+}
+
+.price-matching .small-text {
+
+}
+
+
+// .top-two, .bottom-two {
+//   width: 100%;
+// }
+
+// .regular-promotions {
+//   display: flex;
+// }
+
+// .regular-promotions h2 {
+//   text-align: center;
+//   margin: 0;
+//   padding: 0;
+//   color: black;
+// }
+
+// .regular-promotions p {
+//   padding: 0 40px;
+//   color: black;
+// }
+
+.small-text {
+  font-size: 12px;
+}
+
+// .regular-promotions h4 {
+//   text-align: center;
+//   color: black;
+// }
+
+// .promotion {
+//   padding: 40px 60px;
+// }
+
+//promotion animations:
+
+
+//contact
+.contact-us h2 {
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+
+.contact-us .header-image {
+  background-image: url(../assets/images/beach-rocks-min.jpeg);
+  height: 50vh;
+  background-size: cover;
+  background-position: 70% 40%;
+  h2 {
+    color: white;
+  }
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  width: 100%;
+  .form-heading {
+    color: #333232;
+    text-align: center;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  label, input {
+    width: 100%;
+    padding: 10px 0;
+    color: #333232;
+    border-radius: 10px;
+    border: none;
+  }
+}
+
+.contact-form .message-input {
+  padding: 50px;
+}
+
+.contact-form .submit {
+  margin-top: 30px;
+  margin-left: 150px;
+  color: white;
+  padding: 10px 30px;
+  background-color: #333232;
+  border: 2px solid #333232;
+  border-radius: 10px;
+  width: 50%;
+}
+
+.contact-main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.store-map {
+  width: 100%;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.contact-us button {
+  padding: 10px 30px;
+  margin: 20px 600px;
+  background-color: #333232;
+  border: 2px solid #333232;
+  border-radius: 10px;
+}
+
+.contact-us button a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
 }
 
 // footer styles 
@@ -566,6 +905,10 @@ footer form button {
   border-radius: 10px;
 }
 
+.sign-up-footer {
+  padding-top: 75px;
+}
+
 footer .copyright {
   background: white;
   p {
@@ -589,6 +932,197 @@ footer .copyright {
   50% {
     top: 80px;
   }
+}
+
+// media queries
+
+// 1200px screen width
+
+@media only screen and (max-width: 1200px) {
+
+  header nav ul li {
+    text-align: center;
+      a {
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+
+  header .logo {
+    padding-left: 15px;
+  }
+
+  .slide1 .slide-content h3 {
+    font-size: 4em;
+  }
+
+  
+}
+
+//1080px screen width {
+
+  @media only screen and (max-width: 1080px) {
+
+    .review {
+    width: 600px;
+    height: 500px;
+    margin: 20px;
+    }
+  }
+
+// 1030px screen width
+
+@media only screen and (max-width: 1030px) {
+
+  header nav ul li {
+      padding: 30px 25px 0;
+    }
+
+    .main-intro {
+      margin: 50px 100px 30px;
+    }
+}
+
+// 935px screen width
+
+@media only screen and (max-width: 1030px) {
+
+  header nav ul li {
+    padding: 30px 20px 0;
+}
+
+.services-content p, .specials-content p {
+    font-size: 0.9em;
+}
+
+.review {
+    width: 600px;
+    height: 450px;
+    margin: 15px;
+}
+
+.review-text {
+  font-size: 14px;
+}
+
+}
+
+//820px screen width
+
+@media only screen and (max-width: 820px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    ul {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  header .logo {
+    padding: 0;
+    width: 20%;
+  }
+
+  header nav ul li {
+    padding-top: 5px;
+  }
+
+  .main-intro p {
+    font-size: 16px;
+    span {
+      font-size: 25px;
+    }
+  }
+
+  .services-content p, .specials-content p {
+    font-size: 0.8em;
+  }
+
+  .review-text {
+    font-size: 12px;
+  }
+
+}
+
+//screen width of 768px
+
+@media only screen and (max-width: 768px) {
+
+  .slide1 .slide-content h3 {
+    font-size: 3em;
+  }
+
+  .service-options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 80%;
+  }
+
+  .specials-detail {
+    flex-direction: column;
+    align-items: center;
+    .img-container {
+      width: 80%;
+    }
+    .specials-content {
+      padding-top: 0px;
+      width: 80%;
+      align-items: center;
+      p {
+        text-align: center;
+        margin-top: 0;
+      }
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .reviews {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    .review {
+      height: 275px;
+      p {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  header nav ul {
+    display: none;
+  }
+
+  header .logo {
+    width: 40%;
+  }
+
+  .slide1 .slide-content h3 {
+    font-size: 2.5em;
+  }
+
+  .main-intro {
+    margin: 50px 25px 30px;
+    padding: 20px 50px 10px;
+    p {
+      font-size: 14px
+    }
+  }
+
+  .review {
+    width: 400px;
+    height: 300px;
+  }
+
 }
 
 

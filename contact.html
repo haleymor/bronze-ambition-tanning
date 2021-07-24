@@ -20,13 +20,52 @@
           <li><a href="tanning-beds.html">tanning</a></li>
           <li><a href="uv-free-tanning.html">spray tan</a></li>
           <li><a href="specials.html">promotions</a></li>
-          <li><a href="faq.html">reviews</a></li>
+          <!-- <li><a href="faq.html">reviews</a></li> -->
           <li><a href="contact.html">contact us</a></li>
         </ul>
       </nav>
     </header>
 
-  <h2>Contact Us</h2>
+    <section class="contact-us">
+      <div class="header-image">
+        <h2>Contact Us</h2>
+      </div>
+      <button>
+        <a href="assets/files/price-list.pdf" target="_blank" rel="noopener noreferrer">See Our Price List</a>
+      </button>
+      <div class="contact-main-content">
+        <div class="form-section">
+          <h3 class="form-heading">We would love to hear from you!</h3>
+          <form id="contact-us" action="contact.php" method="POST" class="contact-form">
+            <fieldset>
+            <legend>Contact us</legend>
+
+            <input type="hidden" name="submitted" id="submitted" value="1"/>
+
+            <label for="name">Name*:</label>
+            <input type="text" name="name" id="name" maxlength="20"/>
+
+            <label for="email">Email Address*:</label>
+            <input type="email" name="email" id="email" maxlength="50"/>
+
+            <label for="phone">Phone Number:</label>
+            <input type="phone" name="phone" id="phone" maxlength="15"/>
+
+            <label for="message">Message:</label>
+            <textarea rows="10" cols="50" name="message" id="message"></textarea>
+
+            <input type="submit" value="Send" class="submit"/><input type="reset" value="clear"/>
+
+            </fieldset>
+          </form>
+        </div>
+        <div class="store-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2893.0574507898855!2d-80.21558214944885!3d43.521994679023585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b84cb11cc02cf%3A0xd40df81066ec25c7!2sBronze%20Ambition!5e0!3m2!1sen!2sca!4v1626068091304!5m2!1sen!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
 
   <footer>
     <div class="footer-content wrapper">
@@ -54,12 +93,13 @@
         <p>Sunday: 10am - 5pm</p>
       </div>
       <div class="sign-up-footer">
-        <h3>Join Our Email List!</h3>
-        <form action="">
-          <label for="email">Your Email:</label>
-          <input type="email">
-          <button type="submit">Subscribe</button>
-        </form>
+        <!-- <h3>Join Our Email List!</h3> -->
+        <!-- <form action=""> -->
+        <!-- <label for="email">Your Email:</label>
+                <input type="email"> -->
+        <button><a href="contact.html">Get In Touch!</a></button>
+        <!-- <button type="submit">Subscribe</button> -->
+        <!-- </form> -->
       </div>
     </div>
     <div class="copyright">
