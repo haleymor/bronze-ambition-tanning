@@ -18,6 +18,9 @@
 
 // general styles
 
+$color: #111;
+$primary: #FFFFFF;
+
 body {
   background-color: #ebd1d0;
   color:#FFFFFF;
@@ -51,28 +54,119 @@ header {
 }
 
 header .logo {
-width: 15%;
+width: 20%;
+margin: 6px;
+cursor: pointer;
 }
 
 header nav {
   display: flex;
+  justify-content: space-between;
   ul {
     display: flex;
-    width: 80%;
+    // width: 80%;
     list-style: none;
-    padding: 0;
-    justify-content: flex-end;
+    // padding: 0;
     li {
-      padding: 30px 40px 0;
+      // padding: 30px 40px 0;
       a {
+        display: inline-block;
+        padding: 30px 40px 0;
         text-decoration: none;
         text-transform: uppercase;
         color: #ffffff;
         font-size: 20px;
       }
+      a:hover {
+        color: black;
+      }
     }
   }
 }
+
+
+.book-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.book-button .cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  transition: all .2s ease;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba($primary, .5);
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease;
+  }
+  span {
+    position: relative;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: $color;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+      background: rgba($primary, 1);
+    }
+    svg {
+      transform: translateX(0);
+    }
+  }
+  &:active {
+    transform: scale(0.96);
+  }
+}
+
+
+// header nav .open-menu, header nav .close-menu, header nav .menu-icons {
+//   display: none;
+// }
+
+header nav .open-menu {
+  font-size: 4rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+header nav ul .menu-icons a {
+  color: white;
+}
+
+header nav ul .close-menu, .menu-icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {color: black;}
+.fa-twitter:hover {color: black;}
+.fa-instagram:hover {color: black}
+
 
 // home styles
 #slider, .slide-content, .slide-container {
@@ -94,7 +188,8 @@ header nav {
 
 .slide1 .slide-content h3 {
   font-size: 5em;
- margin-top: 200px;
+  margin-top: 200px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .slide2 {
@@ -177,8 +272,9 @@ header nav {
   background-color: #C19AA0;
   padding: 20px 100px 10px;
   margin: 50px 200px 30px;
-  border: 1px solid white;
+  // border: 1px solid white;
   border-radius: 5px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .main-intro p {
@@ -262,6 +358,7 @@ header nav {
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .services-content button a, .specials-content button a, .sign-up-footer button a {
@@ -285,17 +382,17 @@ header nav {
 
 .tanning {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+	flex-flow: row wrap;
+	justify-content: center;
 
 }
 
-.tanning-bed {
-  padding: 40px;
-  width: 33%;
-}
+// .tanning-bed {
+//   padding: 40px;
+//   width: 33%;
+// }
 
-.service-page .tanning-bed h3 {
+.service-page h3 {
   color: #4DC3AB;
 }
 
@@ -310,25 +407,25 @@ header nav {
   text-align: center;
 }
 
-.tanning-bed-content h5 {
-  color: black;
-  text-align: center;
-}
+// .tanning-bed-content h5 {
+//   color: black;
+//   text-align: center;
+// }
 
-.tanning-bed-content ul {
-  color: black;
-}
+// .tanning-bed-content ul {
+//   color: black;
+// }
 
-.tanning-bed-content ul li {
-  padding-bottom: 10px;
-  line-height: 1.5;
-}
+// .tanning-bed-content ul li {
+//   padding-bottom: 10px;
+//   line-height: 1.5;
+// }
 
-.tanning-bed-content {
-  background: #D2CBCB;
-  padding: 5px 25px;
-  height: 900px;
-}
+// .tanning-bed-content {
+//   background: #D2CBCB;
+//   padding: 5px 25px;
+//   height: 900px;
+// }
 
 .service-options {
   display: flex;
@@ -340,6 +437,7 @@ header nav {
   height:400px;
   border:2px solid white;
   margin: 20px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .box-overlay{
@@ -360,6 +458,11 @@ header nav {
     color: white;
     font-size: 2.5em;
   }
+}
+
+.box-overlay span:hover {
+  font-size: 1.2em;
+  transition: 0.2s ease-in;
 }
 
 .box1 {
@@ -400,11 +503,18 @@ header nav {
 }
 
 .review{
-  width:400px;
-  height:450px;
-  margin: 40px;
+  padding: 20px;
   text-align: center;
 }
+
+// .review1 {
+//   padding: 20px;
+// }
+
+// .review2 .review-text {
+//   // margin: 10px 90px;
+// //   padding: 10px 100px;
+// // }
 
 .review-text {
   color: #333232;
@@ -446,6 +556,8 @@ header nav {
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }
 
 .uv-free-tanning button a {
@@ -465,19 +577,19 @@ header nav {
 }
 
 .mystic-shades, .mystic-scents, .accelerator, .home-care {
-  padding: 10px 10px;
+  padding: 10px 20px;
   margin: 70px 50px;
   background-color: white;
   border: 1px solid white;
   border-radius: 5px;
   line-height: 1.5;
   width: 55%;
-  height: 250px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .mystic-shades ul li, .mystic-scents ul li {
   text-align: left;
-  padding-left: 70px;
+  // padding-left: 70px;
 }
 
 .accelerator p, .home-care p {
@@ -491,9 +603,9 @@ header nav {
 
 .mystic-image {
   border-radius: 5px;
-  width: 50%;
-  padding: 10px 10px;
-  margin: 10px 40px;
+  width: 70%;
+  // padding: 10px 10px;
+  margin-top: 70px;
   img {
     border-radius: 5px;
   }
@@ -546,6 +658,16 @@ header nav {
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.tanning-beds-intro .book-now {
+  padding: 10px 65px;
+}
+
+.uv-free-tanning .book-now {
+  padding: 10px 65px;
 }
 
 .tanning-beds-intro button a {
@@ -556,15 +678,131 @@ header nav {
 
 .tanning-beds-intro-text {
   background-color: white;
-  padding: 40px 40px;
-  margin: 70px 250px 20px;
+  padding: 40px 80px;
+  margin: 70px 200px 20px;
+  line-height: 1.5;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+// .tanning-bed-list {
+//   padding-left: 500px;
+//   line-height: 2.5;
+// }
+
+.card {
+  margin: 50px auto 50px;
+  width: 350px;
+  height: 450px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-front {
+  background-image: linear-gradient(to bottom right, beige, lightcoral);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-front h5 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-front p {
+  font-size: 20px;
+}
+
+.card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+}
+
+.card-header {
+  position: relative;
+  padding: 30px 30px 10px;
+}
+
+.card-header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 00 50% 0;
+  background-image: linear-gradient(to bottom left, white 10%,  #ebd1d0 115%);
+}
+
+.card-image {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  border-radius: 20%;
+  background-color: white;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.card-header h2 {
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px;
+  padding-top: 0;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body h3 {
+  color: black;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: black;
   line-height: 1.5;
 }
 
-.tanning-bed-list {
-  padding-left: 500px;
-  line-height: 2.5;
-}
+
 
 // reviews
 .reviews h2 {
@@ -597,12 +835,17 @@ header nav {
   }
 }
 
+.promotions .button {
+  margin: 40px auto;
+  text-align: center;
+}
+
 .promotions button {
   padding: 10px 30px;
-  margin: 20px 600px;
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .promotions button a {
@@ -700,8 +943,9 @@ header nav {
   background-color: #C19AA0;
   padding: 20px 100px 10px;
   margin: 50px 200px 30px;
-  border: 1px solid white;
+  // border: 1px solid white;
   border-radius: 5px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .price-matching h2 {
@@ -787,7 +1031,7 @@ header nav {
 .contact-form {
   display: flex;
   flex-direction: column;
-  label, input {
+  label, input, textarea {
     width: 100%;
     padding: 10px 0;
     color: #333232;
@@ -809,6 +1053,7 @@ header nav {
   border: 2px solid #333232;
   border-radius: 10px;
   width: 50%;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .contact-main-content {
@@ -819,15 +1064,32 @@ header nav {
 .store-map {
   width: 100%;
   padding: 50px;
-  margin-top: 20px;
+  margin-top: 70px;
+}
+
+.store-map iframe {
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us .button {
+  text-align: center;
+  margin-top: 40px;
+  margin: 40px 50px 20px;
+}
+
+.contact-us .button .book-now {
+  padding: 10px 65px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .contact-us button {
   padding: 10px 30px;
-  margin: 20px 600px;
+  // margin: 20px 600px;
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .contact-us button a {
@@ -963,31 +1225,39 @@ footer .copyright {
 
   @media only screen and (max-width: 1080px) {
 
-    .review {
-    width: 600px;
-    height: 500px;
-    margin: 20px;
-    }
+  .mystic-intro {
+    padding: 40px 200px 10px;
   }
+
+}
 
 // 1030px screen width
 
 @media only screen and (max-width: 1030px) {
 
-  header nav ul li {
+  header nav ul li a {
       padding: 30px 25px 0;
     }
 
     .main-intro {
       margin: 50px 100px 30px;
     }
+
+    .price-matching {
+      margin: 50px 100px 30px;
+    }
+
+    .contact-footer p, .hours-footer p, .sign-up-footer p {
+      font-size: 12px;
+    }
+    
 }
 
 // 935px screen width
 
 @media only screen and (max-width: 1030px) {
 
-  header nav ul li {
+  header nav ul li a {
     padding: 30px 20px 0;
 }
 
@@ -996,13 +1266,30 @@ footer .copyright {
 }
 
 .review {
-    width: 600px;
-    height: 450px;
+    // width: 600px;
+    // height: 450px;
     margin: 15px;
 }
 
 .review-text {
   font-size: 14px;
+}
+
+.accelerator p, .home-care p {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-section {
+  padding: 30px;
+}
+
+.contact-form .submit {
+  margin-left: 0;
+}
+
+.contact-form .submit-button {
+  text-align: center;
 }
 
 }
@@ -1024,7 +1311,7 @@ footer .copyright {
     width: 20%;
   }
 
-  header nav ul li {
+  header nav ul li a {
     padding-top: 5px;
   }
 
@@ -1043,6 +1330,60 @@ footer .copyright {
     font-size: 12px;
   }
 
+  .mystic-intro {
+    padding: 40px 100px 10px;
+  }
+
+  .mystic-details, .further-details {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .mystic-shades .mystic-scents {
+    margin-bottom: 0;
+  }
+
+  .mystic-image {
+    margin: 0;
+  }
+
+  .accelerator {
+    margin-top: 0;
+  }
+
+  .mystic-shades, .mystic-scents, .accelerator, .home-care {
+    width: 85%;
+  }
+
+  .regular-promotions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .price-matching {
+    padding: 20px 50px 10px;
+    margin: 50px 75px 30px;
+  }
+
+  .contact-main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .store-map {
+    margin: 0 auto;
+    width: 70%;
+    iframe {
+      width: 100%;
+    }
+  }
+  
 }
 
 //screen width of 768px
@@ -1087,7 +1428,7 @@ footer .copyright {
     align-items: center;
     width: 80%;
     .review {
-      height: 275px;
+      // height: 275px;
       p {
         text-align: center;
         font-size: 14px;
@@ -1095,11 +1436,93 @@ footer .copyright {
     }
   }
 
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .mobile-footer {
+  //   display: flex;
+  //   justify-content: space-around;
+  //   width: 100%;
+  // }
+
+  .connect-footer {
+    width: 40%;
+  }
+
+  .hours-footer, .contact-footer, .sign-up-footer{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+  }
+
+  .hours-footer p, .contact-footer p, .sign-up-footer p {
+    font-size: 18px;
+  }
+
+  .sign-up-footer {
+    padding-top: 40px;
+  }
+
+  // .contact-footer {
+  //   margin-left: 200px;
+  // }
+  
+
 }
 
 @media only screen and (max-width: 600px) {
+
+  header nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   header nav ul {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ebd1d0;
+    transition: top 1s ease;
     display: none;
+  }
+
+//   header nav .open-menu, header nav .close-menu, header nav .menu-icons {
+//   visibility: visible;
+// }
+
+
+  header nav ul .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  header nav .open-menu {
+    display: block;
+    margin: 20px;
+  }
+
+  header nav ul li a {
+    font-size: 40px;
+  }
+    a:hover {
+      color: black;
+  }
+
+  .menu-icons i {
+    display: inline-block;
+    padding: 12px;
   }
 
   header .logo {
@@ -1118,9 +1541,26 @@ footer .copyright {
     }
   }
 
-  .review {
-    width: 400px;
-    height: 300px;
+  // .review {
+  //   width: 400px;
+  //   height: 300px;
+  // }
+
+  .contact-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .store-map {
+    margin: 0 auto;
+    width: 90%;
+    iframe {
+      width: 100%;
+    }
+  }
+
+  .image-break-overlay {
+    width: 300px;
   }
 
 }

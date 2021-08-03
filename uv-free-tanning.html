@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Rochester&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <title>Spray Tan</title>
 </head>
 
@@ -17,13 +19,23 @@
       <div class="logo">
         <a href="index.html"><img src="assets/images/logo-white.png" alt="bronze ambition logo"></a>
       </div>
-      <ul>
-        <!-- <li><a href="index.html">home</a></li> -->
+      <div class="open-menu"><i class="fa fa-bars"></i></div>
+      <ul class="main-menu">
+        <!-- <li class="home-menu-item"><a href="index.html">home</a></li> -->
         <li><a href="tanning-beds.html">tanning</a></li>
         <li><a href="uv-free-tanning.html">spray tan</a></li>
         <li><a href="specials.html">promotions</a></li>
         <!-- <li><a href="faq.html">reviews</a></li> -->
         <li><a href="contact.html">contact us</a></li>
+        <div class="close-menu"><i class="fa fa-times"></i></div>
+        <span class="menu-icons">
+          <a href="https://www.facebook.com/bronzeambitiontanning/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/bronze_ambition/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/bronzeambition?lang=en" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-twitter"></i></a>
+        </span>
       </ul>
     </nav>
   </header>
@@ -34,11 +46,16 @@
     </div>
     <div class="mystic-intro">
       <p>Our Mystic HD spray tan is fully customizable and adjusts to your natural skin tone.</p>
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/283774034" width="640" height="360" frameborder="0"
+        allowfullscreen></iframe>
       <p>The Mystic uses a clear solution that darkens your skin based on your natural undertones. The
         Mystic booth allows for many customization options such as different shades of instant bronzers and a variety of scents that you can add to the clear solution base. With its focus on skin care, Mystic tan is the perfect solution for achieving that natural healthy glow!</p>
     </div>
     <button>
       <a href="assets/files/price-list.pdf" target="_blank" rel="noopener noreferrer">See Our Price List</a>
+    </button>
+    <button class="book-now">
+      <a href="https://square.site/book/LWWJ6CSC4SD9M/bronze-ambition" target="_blank" rel="noopener noreferrer">Book Now</a>
     </button>
     <div class="mystic-details">
       <div class="mystic-shades">
@@ -116,6 +133,11 @@
       <p>Copyright &copy 2020 designed and developed by Haley Morris</p>
     </div>
   </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
 

@@ -266,36 +266,133 @@ header {
 }
 
 header .logo {
-  width: 15%;
+  width: 20%;
+  margin: 6px;
+  cursor: pointer;
 }
 
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 80%;
   list-style: none;
-  padding: 0;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-header nav ul li {
-  padding: 30px 40px 0;
 }
 
 header nav ul li a {
+  display: inline-block;
+  padding: 30px 40px 0;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 20px;
+}
+
+header nav ul li a:hover {
+  color: black;
+}
+
+.book-button a {
+  text-decoration: none;
+  color: black;
+}
+
+.book-button .cta {
+  position: relative;
+  margin: auto;
+  padding: 19px 22px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.book-button .cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.5);
+  width: 56px;
+  height: 56px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.book-button .cta span {
+  position: relative;
+  font-size: 20px;
+  line-height: 18px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.book-button .cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #111;
+  stroke-width: 2;
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.book-button .cta:hover:before {
+  width: 100%;
+  background: white;
+}
+
+.book-button .cta:hover svg {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.book-button .cta:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+header nav .open-menu {
+  font-size: 4rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+header nav ul .menu-icons a {
+  color: white;
+}
+
+header nav ul .close-menu, .menu-icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: black;
+}
+
+.fa-twitter:hover {
+  color: black;
+}
+
+.fa-instagram:hover {
+  color: black;
 }
 
 #slider, .slide-content, .slide-container {
@@ -318,6 +415,7 @@ header nav ul li a {
 .slide1 .slide-content h3 {
   font-size: 5em;
   margin-top: 200px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .slide2 {
@@ -395,8 +493,9 @@ header nav ul li a {
   background-color: #C19AA0;
   padding: 20px 100px 10px;
   margin: 50px 200px 30px;
-  border: 1px solid white;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .main-intro p {
@@ -485,6 +584,8 @@ header nav ul li a {
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .services-content button a, .specials-content button a, .sign-up-footer button a {
@@ -508,19 +609,16 @@ header nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.tanning-bed {
-  padding: 40px;
-  width: 33%;
-}
-
-.service-page .tanning-bed h3 {
+.service-page h3 {
   color: #4DC3AB;
 }
 
@@ -533,26 +631,6 @@ header nav ul li a {
   color: black;
   margin: 20px auto;
   text-align: center;
-}
-
-.tanning-bed-content h5 {
-  color: black;
-  text-align: center;
-}
-
-.tanning-bed-content ul {
-  color: black;
-}
-
-.tanning-bed-content ul li {
-  padding-bottom: 10px;
-  line-height: 1.5;
-}
-
-.tanning-bed-content {
-  background: #D2CBCB;
-  padding: 5px 25px;
-  height: 900px;
 }
 
 .service-options {
@@ -569,6 +647,8 @@ header nav ul li a {
   height: 400px;
   border: 2px solid white;
   margin: 20px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .box-overlay {
@@ -589,6 +669,12 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 2.5em;
+}
+
+.box-overlay span:hover {
+  font-size: 1.2em;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .box1 {
@@ -633,9 +719,7 @@ header nav ul li a {
 }
 
 .review {
-  width: 400px;
-  height: 450px;
-  margin: 40px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -680,6 +764,9 @@ header nav ul li a {
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  margin: 20px;
 }
 
 .uv-free-tanning button a {
@@ -703,19 +790,19 @@ header nav ul li a {
 }
 
 .mystic-shades, .mystic-scents, .accelerator, .home-care {
-  padding: 10px 10px;
+  padding: 10px 20px;
   margin: 70px 50px;
   background-color: white;
   border: 1px solid white;
   border-radius: 5px;
   line-height: 1.5;
   width: 55%;
-  height: 250px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .mystic-shades ul li, .mystic-scents ul li {
   text-align: left;
-  padding-left: 70px;
 }
 
 .accelerator p, .home-care p {
@@ -729,9 +816,8 @@ header nav ul li a {
 
 .mystic-image {
   border-radius: 5px;
-  width: 50%;
-  padding: 10px 10px;
-  margin: 10px 40px;
+  width: 70%;
+  margin-top: 70px;
 }
 
 .mystic-image img {
@@ -781,6 +867,17 @@ header nav ul li a {
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.tanning-beds-intro .book-now {
+  padding: 10px 65px;
+}
+
+.uv-free-tanning .book-now {
+  padding: 10px 65px;
 }
 
 .tanning-beds-intro button a {
@@ -791,14 +888,143 @@ header nav ul li a {
 
 .tanning-beds-intro-text {
   background-color: white;
-  padding: 40px 40px;
-  margin: 70px 250px 20px;
+  padding: 40px 80px;
+  margin: 70px 200px 20px;
   line-height: 1.5;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
-.tanning-bed-list {
-  padding-left: 500px;
-  line-height: 2.5;
+.card {
+  margin: 50px auto 50px;
+  width: 350px;
+  height: 450px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-inner.is-flipped {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
+  border-radius: 16px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card-front {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(beige), to(lightcoral));
+  background-image: linear-gradient(to bottom right, beige, lightcoral);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-front h5 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-front p {
+  font-size: 20px;
+}
+
+.card-back {
+  background-color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+}
+
+.card-header {
+  position: relative;
+  padding: 30px 30px 10px;
+}
+
+.card-header:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 00 50% 0;
+  background-image: -webkit-gradient(linear, right top, left bottom, color-stop(10%, white), color-stop(115%, #ebd1d0));
+  background-image: linear-gradient(to bottom left, white 10%, #ebd1d0 115%);
+}
+
+.card-image {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  border-radius: 20%;
+  background-color: white;
+  border: 5px solid white;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-header h2 {
+  color: black;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px;
+  padding-top: 0;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-body h3 {
+  color: black;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.card-body p {
+  font-size: 14px;
+  color: black;
+  line-height: 1.5;
 }
 
 .reviews h2 {
@@ -832,12 +1058,18 @@ header nav ul li a {
   color: white;
 }
 
+.promotions .button {
+  margin: 40px auto;
+  text-align: center;
+}
+
 .promotions button {
   padding: 10px 30px;
-  margin: 20px 600px;
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .promotions button a {
@@ -946,8 +1178,9 @@ header nav ul li a {
   background-color: #C19AA0;
   padding: 20px 100px 10px;
   margin: 50px 200px 30px;
-  border: 1px solid white;
   border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .price-matching h2 {
@@ -1008,7 +1241,7 @@ header nav ul li a {
           flex-direction: column;
 }
 
-.contact-form label, .contact-form input {
+.contact-form label, .contact-form input, .contact-form textarea {
   width: 100%;
   padding: 10px 0;
   color: #333232;
@@ -1029,6 +1262,8 @@ header nav ul li a {
   border: 2px solid #333232;
   border-radius: 10px;
   width: 50%;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .contact-main-content {
@@ -1043,15 +1278,33 @@ header nav ul li a {
 .store-map {
   width: 100%;
   padding: 50px;
-  margin-top: 20px;
+  margin-top: 70px;
+}
+
+.store-map iframe {
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us .button {
+  text-align: center;
+  margin-top: 40px;
+  margin: 40px 50px 20px;
+}
+
+.contact-us .button .book-now {
+  padding: 10px 65px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .contact-us button {
   padding: 10px 30px;
-  margin: 20px 600px;
   background-color: #333232;
   border: 2px solid #333232;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .contact-us button a {
@@ -1189,36 +1442,51 @@ footer .copyright p {
 }
 
 @media only screen and (max-width: 1080px) {
-  .review {
-    width: 600px;
-    height: 500px;
-    margin: 20px;
+  .mystic-intro {
+    padding: 40px 200px 10px;
   }
 }
 
 @media only screen and (max-width: 1030px) {
-  header nav ul li {
+  header nav ul li a {
     padding: 30px 25px 0;
   }
   .main-intro {
     margin: 50px 100px 30px;
   }
+  .price-matching {
+    margin: 50px 100px 30px;
+  }
+  .contact-footer p, .hours-footer p, .sign-up-footer p {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 1030px) {
-  header nav ul li {
+  header nav ul li a {
     padding: 30px 20px 0;
   }
   .services-content p, .specials-content p {
     font-size: 0.9em;
   }
   .review {
-    width: 600px;
-    height: 450px;
     margin: 15px;
   }
   .review-text {
     font-size: 14px;
+  }
+  .accelerator p, .home-care p {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .form-section {
+    padding: 30px;
+  }
+  .contact-form .submit {
+    margin-left: 0;
+  }
+  .contact-form .submit-button {
+    text-align: center;
   }
 }
 
@@ -1242,7 +1510,7 @@ footer .copyright p {
     padding: 0;
     width: 20%;
   }
-  header nav ul li {
+  header nav ul li a {
     padding-top: 5px;
   }
   .main-intro p {
@@ -1256,6 +1524,64 @@ footer .copyright p {
   }
   .review-text {
     font-size: 12px;
+  }
+  .mystic-intro {
+    padding: 40px 100px 10px;
+  }
+  .mystic-details, .further-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mystic-shades .mystic-scents {
+    margin-bottom: 0;
+  }
+  .mystic-image {
+    margin: 0;
+  }
+  .accelerator {
+    margin-top: 0;
+  }
+  .mystic-shades, .mystic-scents, .accelerator, .home-care {
+    width: 85%;
+  }
+  .regular-promotions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .price-matching {
+    padding: 20px 50px 10px;
+    margin: 50px 75px 30px;
+  }
+  .contact-main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-form {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .store-map {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .store-map iframe {
+    width: 100%;
   }
 }
 
@@ -1311,18 +1637,88 @@ footer .copyright p {
             align-items: center;
     width: 80%;
   }
-  .reviews .review {
-    height: 275px;
-  }
   .reviews .review p {
     text-align: center;
     font-size: 14px;
   }
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .connect-footer {
+    width: 40%;
+  }
+  .hours-footer, .contact-footer, .sign-up-footer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+  }
+  .hours-footer p, .contact-footer p, .sign-up-footer p {
+    font-size: 18px;
+  }
+  .sign-up-footer {
+    padding-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   header nav ul {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #ebd1d0;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
     display: none;
+  }
+  header nav ul .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  header nav .open-menu {
+    display: block;
+    margin: 20px;
+  }
+  header nav ul li a {
+    font-size: 40px;
+  }
+  a:hover {
+    color: black;
+  }
+  .menu-icons i {
+    display: inline-block;
+    padding: 12px;
   }
   header .logo {
     width: 40%;
@@ -1337,8 +1733,18 @@ footer .copyright p {
   .main-intro p {
     font-size: 14px;
   }
-  .review {
-    width: 400px;
-    height: 300px;
+  .contact-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .store-map {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .store-map iframe {
+    width: 100%;
+  }
+  .image-break-overlay {
+    width: 300px;
   }
 }

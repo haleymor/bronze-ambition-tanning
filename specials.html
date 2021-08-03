@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&family=Rochester&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <title>Promotions</title>
 </head>
 <body>
@@ -15,13 +17,23 @@
         <div class="logo">
           <a href="index.html"><img src="assets/images/logo-white.png" alt="bronze ambition logo"></a>
         </div>
-        <ul>
+        <div class="open-menu"><i class="fa fa-bars"></i></div>
+        <ul class="main-menu">
           <!-- <li><a href="index.html">home</a></li> -->
           <li><a href="tanning-beds.html">tanning</a></li>
           <li><a href="uv-free-tanning.html">spray tan</a></li>
           <li><a href="specials.html">promotions</a></li>
           <!-- <li><a href="faq.html">reviews</a></li> -->
           <li><a href="contact.html">contact us</a></li>
+          <div class="close-menu"><i class="fa fa-times"></i></div>
+          <span class="menu-icons">
+            <a href="https://www.facebook.com/bronzeambitiontanning/" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/bronze_ambition/" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/bronzeambition?lang=en" target="_blank" rel="noopener noreferrer"><i
+                class="fab fa-twitter"></i></a>
+          </span>
         </ul>
       </nav>
     </header>
@@ -30,9 +42,11 @@
       <div class="header-image">
         <h2>Promotions</h2>
       </div>
-      <button>
-        <a href="assets/files/test.pdf" target="_blank" rel="noopener noreferrer">View our Latest Deals!</a>
-      </button>
+      <div class="button">
+        <button>
+          <a href="assets/files/test.pdf" target="_blank" rel="noopener noreferrer">View our Latest Deals!</a>
+        </button>
+      </div>
       <div class="regular-promotions">
         <div class="promotion promo1">
           <h2 class="title">Mystic Mondays</h2>
@@ -63,7 +77,7 @@
         </div>
       </div>
       <div class="price-matching">
-        <h2>Pricematching</h2>
+        <!-- <h2>Pricematching</h2> -->
         <div>
           <p>We offer Pricematching on all products and even tanning prices! If you can find a better deal, bring it to us and we will match it!<sup>*</sup></p>
           <p class="small-text"><sup>*</sup>This is limited to other tanning salons within Guelph and must be the same item or tanning bed</p>
@@ -139,6 +153,12 @@
         <p>Copyright &copy 2020 designed and developed by Haley Morris</p>
       </div>
     </footer>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="script.js"></script>
   
 </body>
 </html>
