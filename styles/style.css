@@ -1519,6 +1519,9 @@ footer .copyright p {
   .main-intro p span {
     font-size: 25px;
   }
+  .mystic-intro iframe {
+    width: 500px;
+  }
   .services-content p, .specials-content p {
     font-size: 0.8em;
   }
@@ -1526,7 +1529,7 @@ footer .copyright p {
     font-size: 12px;
   }
   .mystic-intro {
-    padding: 40px 100px 10px;
+    padding: 40px 50px 10px;
   }
   .mystic-details, .further-details {
     -webkit-box-orient: vertical;
@@ -1700,6 +1703,10 @@ footer .copyright p {
     transition: top 1s ease;
     display: none;
   }
+  .mystic-intro iframe {
+    width: 400px;
+    height: 300px;
+  }
   header nav ul .close-menu {
     display: block;
     position: absolute;
@@ -1746,5 +1753,15 @@ footer .copyright p {
   }
   .image-break-overlay {
     width: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .mystic-intro {
+    padding: 5px;
+  }
+  .mystic-intro iframe {
+    width: 350px;
+    height: 275px;
   }
 }

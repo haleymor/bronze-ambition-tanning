@@ -959,9 +959,9 @@ header nav ul .close-menu, .menu-icons i {
   text-align: center;
 }
 
-.price-matching .small-text {
+// .price-matching .small-text {
 
-}
+// }
 
 
 // .top-two, .bottom-two {
@@ -1322,6 +1322,11 @@ footer .copyright {
     }
   }
 
+
+  .mystic-intro iframe {
+    width: 500px;
+  }
+
   .services-content p, .specials-content p {
     font-size: 0.8em;
   }
@@ -1331,7 +1336,7 @@ footer .copyright {
   }
 
   .mystic-intro {
-    padding: 40px 100px 10px;
+    padding: 40px 50px 10px;
   }
 
   .mystic-details, .further-details {
@@ -1500,6 +1505,11 @@ footer .copyright {
 //   visibility: visible;
 // }
 
+.mystic-intro iframe {
+  width: 400px;
+  height: 300px;
+}
+
 
   header nav ul .close-menu {
     display: block;
@@ -1565,6 +1575,15 @@ footer .copyright {
 
 }
 
+@media only screen and (max-width: 500px) {
 
+  .mystic-intro {
+    padding: 5px;
+  }
 
+  .mystic-intro iframe {
+    width: 350px;
+    height: 275px;
+  }
 
+}
