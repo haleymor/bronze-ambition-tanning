@@ -43,12 +43,15 @@ h2 {
   padding-top: 60px;
   text-transform: uppercase;
   margin-top: 0;
+  font-size: 2.5em;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 // header styles
 
 header {
   position: fixed;
+  z-index: 99;
   background: #ebd1d0;
   width: 100%;
 }
@@ -173,7 +176,7 @@ header nav ul .close-menu, .menu-icons i {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
 }
 
 .slide {
@@ -193,15 +196,12 @@ header nav ul .close-menu, .menu-icons i {
 }
 
 .slide2 {
-  background-image: url('../assets/images/slide-2.jpg');
-  background-position: 50% 75%;
+  background-image: url('../assets/images/Prestige1100.jpeg');
+  background-position: center;
 }
 
-.slide2 .slide-content a img {
-  width: 20%;
-  position: relative;
-  top: -20px;
-  left: 800px;
+.slide2 .slide-content {
+  padding-top: 400px;
 }
 
 // .slide2 .slide-content button {
@@ -246,11 +246,12 @@ header nav ul .close-menu, .menu-icons i {
 .arrow {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  margin-top: -35px;
+  top: 60%;
+  margin-top: -50px;
   width: 0;
   height: 0;
   border-style: solid;
+  color: white;
 }
 
 #arrow-left {
@@ -338,6 +339,10 @@ header nav ul .close-menu, .menu-icons i {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
+}
+
+.specials-detail img {
+  border: 2px solid white;
 }
 
 .specials-detail {
@@ -577,7 +582,7 @@ header nav ul .close-menu, .menu-icons i {
 }
 
 .mystic-shades, .mystic-scents, .accelerator, .home-care {
-  padding: 10px 20px;
+  padding: 10px 20px 0;
   margin: 70px 50px;
   background-color: white;
   border: 1px solid white;
@@ -590,6 +595,22 @@ header nav ul .close-menu, .menu-icons i {
 .mystic-shades ul li, .mystic-scents ul li {
   text-align: left;
   // padding-left: 70px;
+}
+
+.mystic-shades .color-bottles {
+  margin: auto;
+  width: 80%;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.mystic-scents .scent-image {
+  margin: auto;
+  width: 55%;
+  img {
+    border-radius: 50%;
+  }
 }
 
 .accelerator p, .home-care p {
@@ -608,7 +629,13 @@ header nav ul .close-menu, .menu-icons i {
   margin-top: 70px;
   img {
     border-radius: 5px;
+    border: 2px solid white;
   }
+}
+
+.demo-video {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .leg-tanner {
@@ -678,6 +705,7 @@ header nav ul .close-menu, .menu-icons i {
 
 .tanning-beds-intro-text {
   background-color: white;
+  border: 2px black solid;
   padding: 40px 80px;
   margin: 70px 200px 20px;
   line-height: 1.5;
@@ -774,8 +802,9 @@ header nav ul .close-menu, .menu-icons i {
   border-radius: 20%;
   background-color: white;
   border: 5px solid white;
-  object-fit: cover;
+  object-fit: contain;
 }
+
 
 .card-header h2 {
   color: black;
@@ -868,12 +897,12 @@ header nav ul .close-menu, .menu-icons i {
   margin: 20px;
 }
 
-.promotion:hover .image-overlay {
+.promotion:hover .image-overlay, .promotion:active .image-overlay {
   visibility: visible;
   opacity: 1;
 }
 
-.promotion:hover .title {
+.promotion:hover .title, .promotion:active .title {
   visibility: hidden;
 }
 
@@ -1488,6 +1517,7 @@ footer .copyright {
 
   header nav ul {
     height: 100vh;
+    padding: 0;
     position: fixed;
     top: 0;
     right: 0;
