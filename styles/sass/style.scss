@@ -911,7 +911,7 @@ header nav ul .close-menu, .menu-icons i {
   transform: translateY(1em);
 }
 
-.promotion:hover .overlay-text {
+.promotion:hover .overlay-text, .promotion:active .overlay-text {
   transform: translateY(0);
 }
 
