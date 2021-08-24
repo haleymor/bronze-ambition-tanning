@@ -422,12 +422,14 @@ header nav ul .close-menu, .menu-icons i {
 }
 
 .slide2 {
-  background-image: url("../assets/images/Prestige1100.jpeg");
+  background-image: url("../assets/images/Prestige1100-banner.jpeg");
+  background-size: contain;
   background-position: center;
+  background-color: #B9E8FF;
 }
 
 .slide2 .slide-content {
-  padding-top: 400px;
+  padding-top: 500px;
 }
 
 .slide3 {
@@ -702,7 +704,7 @@ header nav ul .close-menu, .menu-icons i {
 
 .image-break {
   margin: 40px 0;
-  background-image: url("../assets/images/ocean-sunset.png");
+  background-image: url("../assets/images/frank-mckenna-eXHeq48Z-Q4-unsplash.jpeg");
   height: 60vh;
   background-size: cover;
   background-position: 20% 40%;
@@ -956,7 +958,7 @@ header nav ul .close-menu, .menu-icons i {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   overflow: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   border-radius: 16px;
   -webkit-box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
@@ -978,6 +980,7 @@ header nav ul .close-menu, .menu-icons i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow: hidden;
 }
 
 .card-front h5 {
@@ -1141,7 +1144,7 @@ header nav ul .close-menu, .menu-icons i {
           transform: translateY(1em);
 }
 
-.promotion:hover .overlay-text {
+.promotion:hover .overlay-text, .promotion:active .overlay-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
@@ -1325,7 +1328,6 @@ header nav ul .close-menu, .menu-icons i {
 .contact-us .button .book-now {
   padding: 10px 65px;
   margin-left: 50px;
-  margin-right: 50px;
 }
 
 .contact-us button {
@@ -1701,7 +1703,29 @@ footer .copyright p {
   }
 }
 
+@media only screen and (max-width: 605px) {
+  .contact-us .button .book-now {
+    margin-left: 15px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .contact-us .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-us .button .book-now {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
   header nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1734,7 +1758,7 @@ footer .copyright p {
     transition: top 1s ease;
     display: none;
   }
-  .mystic-intro iframe {
+  .demo-video iframe {
     width: 400px;
     height: 300px;
   }
@@ -1791,8 +1815,33 @@ footer .copyright p {
   .mystic-intro {
     padding: 5px;
   }
-  .mystic-intro iframe {
+  .uv-free-tanning h2 {
+    padding-top: 175px;
+  }
+  .demo-video iframe {
     width: 350px;
     height: 275px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .tanning-beds-intro h2 {
+    padding-top: 150px;
+    font-size: 2.2em;
+  }
+  .tanning-beds-intro-text {
+    padding: 40px 60px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .tanning-beds-intro-text {
+    padding: 40px 50px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .tanning-beds-intro-text {
+    padding: 40px 40px;
   }
 }
