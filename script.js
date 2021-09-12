@@ -90,3 +90,7 @@ arrowRight.addEventListener("click", function () {
 });
 
 startSlide();
+
+function enableBtn() {
+  document.getElementById("submitBtn").disabled = false;
+}

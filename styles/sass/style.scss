@@ -196,16 +196,37 @@ header nav ul .close-menu, .menu-icons i {
 }
 
 .slide2 {
-  background-image: url('../assets/images/Prestige1100-banner.jpeg');
-  background-size: contain;
-  background-position: center;
-  background-color: #B9E8FF;
+  background-image: url('../assets/images/Prestige-1100.jpeg');
+  background-position: 70% 27%;
+  // background-position: center top;
+  // background-size: contain;
+  // background-position: center;
+  // background-color: #D3F0FF;
+}
+
+.slide2-overlay {
+  background-color: rgba(60, 60, 60, 0.5);
+  // z-index: 2;
 }
 
 .slide2 .slide-content {
-  padding-top: 500px;
+  padding-top: 530px;
 }
 
+.slide2 .slide-content h3 {
+    font-size: 2.5em;
+    position: absolute;
+    top: 450px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.slide2 .slide-content h2 {
+  // font-family: 'Bad Script', cursive;
+  font-size: 3em;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 145px;
+}
 // .slide2 .slide-content button {
 //   cursor: pointer;
 //   position: relative;
@@ -1088,6 +1109,10 @@ header nav ul .close-menu, .menu-icons i {
   box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
+.contact-form .submit:disabled {
+  background-color: lightgrey;
+}
+
 .contact-main-content {
   display: flex;
   justify-content: center;
@@ -1128,6 +1153,10 @@ header nav ul .close-menu, .menu-icons i {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
+}
+
+.g-recaptcha {
+  padding-top: 10px;
 }
 
 // footer styles 
@@ -1520,6 +1549,10 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 600px) {
+
+  .slide2 {
+    background-position: 53% 27%;
+  }
 
   .contact-us .button {
     display: flex;

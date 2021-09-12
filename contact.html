@@ -69,10 +69,11 @@
             <label for="message">Message:</label>
             <textarea rows="10" cols="50" name="message" id="message"></textarea>
 
+            <div class="g-recaptcha brochure__form__captcha" data-sitekey="6LdWZCgcAAAAAEBa9a083G5JxNjNtk4PWpOsth0K" data-callback="enableBtn"></div>
+
             <div class="submit-button">
-              <input type="submit" value="Send" class="submit" />
+              <input type="submit" value="Send" id=submitBtn class="submit" disabled/>
             </div>
-            
 
           </form>
         </div>
@@ -124,6 +125,7 @@
     </div>
   </footer>
 
+  <script src="https://www.google.com/recaptcha/api.js"></script>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
