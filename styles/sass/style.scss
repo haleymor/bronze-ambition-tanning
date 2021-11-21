@@ -187,6 +187,10 @@ header nav ul .close-menu, .menu-icons i {
 //   overflow: hidden;
 // }
 
+.mobile-image {
+  display: none;
+}
+
 .slide-container {
   width: 100%;
   margin-top: 150px;
@@ -277,7 +281,7 @@ header nav ul .close-menu, .menu-icons i {
   width: 100%;
   height: 500px;
   object-fit: cover;
-  object-position: 30% 52%;
+  object-position: 30% 60%;
   // background-image: url('../assets/images/beach-hat.png');
   // background-position: 30% 52%;
   // width: 100%;
@@ -1324,7 +1328,7 @@ header nav ul .close-menu, .menu-icons i {
 
 
 .contact-us .header-image {
-  background-image: url(../assets/images/beach-rocks-min.jpeg);
+  background-image: url(../assets/images/shifaaz-shamoon-sLAk1guBG90-unsplash-min.jpeg);
   height: 50vh;
   background-size: cover;
   background-position: 70% 40%;
@@ -1735,6 +1739,7 @@ footer .copyright {
   
 }
 
+
 //screen width of 768px
 
 @media only screen and (max-width: 768px) {
@@ -1845,6 +1850,21 @@ footer .copyright {
   // }
   
 
+}
+
+@media only screen and (max-width: 500px) {
+  .desktop-image {
+    display: none;
+  }
+
+  .mobile-image {
+    display: block;
+    height: auto;
+  }
+
+  .slide3 .book-button {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 605px) {
@@ -1979,6 +1999,14 @@ footer .copyright {
 
 }
 
+@media only screen and (max-width: 560px) { 
+
+  .uv-free-tanning h2 {
+
+  }
+
+}
+
 @media only screen and (max-width: 500px) {
 
   .mystic-intro {
@@ -1986,7 +2014,7 @@ footer .copyright {
   }
 
   .uv-free-tanning h2 {
-    padding-top: 175px;
+    padding-top: 140px;
   }
 
   .demo-video iframe {
@@ -2041,6 +2069,7 @@ footer .copyright {
 
   .uv-free-tanning h2 {
     padding-top: 130px;
+    font-size: 36px;
   }
 
   .promotions h2 {
@@ -2058,6 +2087,7 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 320px) {
+
 
   .tanning-beds-intro-text {
     padding: 40px 40px;

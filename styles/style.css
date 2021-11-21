@@ -412,6 +412,10 @@ header nav ul .close-menu, .menu-icons i {
           align-items: center;
 }
 
+.mobile-image {
+  display: none;
+}
+
 .slide-container {
   width: 100%;
   margin-top: 150px;
@@ -434,8 +438,8 @@ header nav ul .close-menu, .menu-icons i {
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 30% 52%;
-     object-position: 30% 52%;
+  -o-object-position: 30% 60%;
+     object-position: 30% 60%;
 }
 
 .slide1 .slide-content h3 {
@@ -1316,7 +1320,7 @@ header nav ul .close-menu, .menu-icons i {
 }
 
 .contact-us .header-image {
-  background-image: url(../assets/images/beach-rocks-min.jpeg);
+  background-image: url(../assets/images/shifaaz-shamoon-sLAk1guBG90-unsplash-min.jpeg);
   height: 50vh;
   background-size: cover;
   background-position: 70% 40%;
@@ -1823,6 +1827,19 @@ footer .copyright p {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    height: auto;
+  }
+  .slide3 .book-button {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 605px) {
   .contact-us .button .book-now {
     margin-left: 15px;
@@ -1945,7 +1962,7 @@ footer .copyright p {
     padding: 5px;
   }
   .uv-free-tanning h2 {
-    padding-top: 175px;
+    padding-top: 140px;
   }
   .demo-video iframe {
     width: 350px;
@@ -1993,6 +2010,7 @@ footer .copyright p {
   }
   .uv-free-tanning h2 {
     padding-top: 130px;
+    font-size: 36px;
   }
   .promotions h2 {
     padding-top: 200px;
