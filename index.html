@@ -39,9 +39,13 @@
 
   <section class="home">
     <div class="slide-container">
-      <div id="arrow-left" class="arrow" onclick='plusSlides(-1)'></div>
-      <div id="slider" class="slider">
-        <div class="slide slide1">
+      <!-- <div id="arrow-left" class="arrow" onclick='plusSlides(-1)'></div> -->
+      <!-- <div id="slider" class="slider"> -->
+        <!-- <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3"> -->
+        <div class="slide slide1 fade">
+          <img src="assets/images/beach-hat.png" alt="">
           <div class="slide-content">
             <h3>Glowing Skin Is Always In</h3>
             <div class="slider-button book-button">
@@ -55,11 +59,12 @@
             </div>
           </div>
         </div>
-        <div class="slide slide2">
-          <div class="slide2-overlay"</div>
+        <div class="slide slide2 fade">
+          <img src="assets/images/slider2img.png">
+          <!-- <div class="slide2-overlay"> -->
             <div class="slide-content">
-              <h2>Now at Bronze Ambition!</h2>
-              <h3>Ergoline Prestige</h3>
+              <!-- <h2>Now at Bronze Ambition!</h2>
+              <h3>Ergoline Prestige</h3> -->
               <div class="slider-button book-button">
                 <a href="https://square.site/book/LWWJ6CSC4SD9M/bronze-ambition" class="cta">
                   <span>book now</span>
@@ -70,8 +75,29 @@
                 </a>
               </div>
             </div>
+          <!-- </div> -->
+        </div>
+        <div class="slide slide3 fade">
+          <img src="assets/images/slider3img.png">
+          <div class="slide-content">
+            <div class="slider-button book-button">
+              <a href="https://square.site/book/LWWJ6CSC4SD9M/bronze-ambition" class="cta">
+                <span>book now</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+        <!-- <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div> -->
         <!-- <div class="slide slide3">
           <div class="slide-content">
             <div class="right-content">
@@ -92,13 +118,28 @@
             </div>
           </div>
         </div> -->
-      </div>
-      <div id="arrow-right" class="arrow" onclick='plusSlides(1)'></div>
-      <div class="slide-container">
-        <div class="slide-full-background">
+        <div class="dots" style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
         </div>
       </div>
-    </div>
+    
+      <!-- <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+      </div> -->
+      <!-- <div class="navigation-dots">
+        <div class="single-dot"></div>
+        <div class="single-dot active"></div>
+      </div> -->
+      <!-- <div id="arrow-right" class="arrow" onclick='plusSlides(1)'></div> -->
+      <!-- <div class="slide-container">
+        <div class="slide-full-background">
+        </div>
+      </div> -->
+    <!-- </div> -->
   </section>
 
   <section class="service-page">
@@ -247,6 +288,19 @@
       <p>Copyright &copy 2020 designed and developed by Haley Morris</p>
     </div>
   </footer>
+
+  <!-- <script type="text/javascript">
+
+    var counter = 1;
+      setInterval(function () {
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if (counter > 2) {
+          counter = 1;
+        }
+      }, 5000);
+
+  </script> -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
