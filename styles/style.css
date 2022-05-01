@@ -1752,6 +1752,12 @@ footer .copyright p {
 }
 
 @media only screen and (max-width: 768px) {
+  .popup {
+    width: 100%;
+  }
+  .popup button {
+    left: 80%;
+  }
   .slide1 .slide-content h3 {
     font-size: 3em;
   }
