@@ -1,4 +1,15 @@
+//pop-up
+jQuery(window).load(function () {
+  if (sessionStorage.getItem('dontLoad') == null) {
+    $('.popup').show();
+    sessionStorage.setItem('dontLoad', 'true');
+}
+});
 
+document.querySelector("#close").addEventListener
+("click", function(){
+  document.querySelector(".popup").style.display = "none";
+})
 
 // mobile menu variables
 const mobileMenu = {};
