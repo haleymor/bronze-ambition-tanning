@@ -412,6 +412,62 @@ header nav ul .close-menu, .menu-icons i {
           align-items: center;
 }
 
+.product-brand-logos .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: white;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.product-brand-logos .logo-container .row {
+  width: 25%;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .product-brand-logos .logo-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+    width: auto;
+    height: 100px;
+  }
+  .product-brand-logos .logo-container .row {
+    margin: auto;
+    min-width: 50%;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .mobile-image {
   display: none;
 }
@@ -443,27 +499,27 @@ header nav ul .close-menu, .menu-icons i {
 }
 
 .slide1 .slide-content h3 {
-  position: relative;
+  position: absolute;
   text-align: center;
   font-size: 5em;
-  top: -300px;
+  top: 200px;
   margin: 0;
   text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .slide1 .slide-content .book-button {
-  position: relative;
-  top: -200px;
+  position: absolute;
+  top: 400px;
 }
 
 .slide2 .slide-content .book-button {
-  position: relative;
-  top: -75px;
+  position: absolute;
+  top: 430px;
 }
 
 .slide3 .slide-content .book-button {
-  position: relative;
-  top: -75px;
+  position: absolute;
+  top: 400px;
 }
 
 .slide3 img {
